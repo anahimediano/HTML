@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+h1{color:purple}
+* {
+    font-family: "Roboto Condensed", serif;
+}
+.class-name{
+  text-transform:uppercase;
+  color:red;
+  letter-spacing:10px;
+  font-size:1rem;
+  border-bottom:15px dotted black;
+  padding-bottom: 0.9rem;
+  font-weight:350;
+}
+
+p{
+  font-weight: 200;
+}
+
+a{
+  text-decoration: underline;
+}
