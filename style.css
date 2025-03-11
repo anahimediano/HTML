@@ -13,10 +13,21 @@ h1{color:purple}
   font-weight:350;
 }
 
+
 p{
   font-weight: 200;
 }
 
 a{
   text-decoration: underline;
+}
+
+.container{
+  display: flex;
+  gap: 8px;
+}
+
+.project-item{
+  display: flex;
+  color: rgb(240, 181, 20);
 }
