@@ -1,0 +1,18 @@
+a{
+    background-color: #36f7b6;
+    color:#fcfcfc;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all linear 0.5s;
+}
+
+nav {
+    display:grid;
+    gap: 0.25rem;
+}
+
+a:hover{
+    background-color: #00ffbf;
+    color: #000000;
+}
