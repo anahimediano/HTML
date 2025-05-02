@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: system-ui;
+        }
+
+        body {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+
+        }
+        p{
+            font-size:4rem ;
+            font-weight: bold;
+            background-color:rgb(255, 255, 255);
+            border-bottom:10px solid rgb(0, 0, 0);
+            border-radius:1rem;
+        }
+    </style>
+
+<body>
+    <p>Today is <span id= "label"></span></p>
+    <button onclick="changeColor()">Make the text green!</button>
+
+    <script>
+        let date= new Date();
+        let weekday = date.getDay();
+        console.log(weekday);
+        let label;
+
+        if (weekday=0){
+            label="Sunday";
+        }else if (weekday == 1){
+            label = "Monday";
+        }else if (weekday == 2){
+            label = "Tuesday";
+        }else if (weekday == 3){
+            label = "Wednesday";
+        }else if (weekday == 4){
+            label = "Thursday";
+        }else if (weekday ==5){
+            label = "Friday";
+        }else {
+            label = "Saturday";
+        }
+        console.log(label);
+        document.querySelector("span").innerHTML=label;
+        document.title = "Today is " + label;
+
+        function changeColor(){
+            document.querySelector("p").style.color = "green"
+        }
+
+    </script>
+</body>
+</head>
+</html>
